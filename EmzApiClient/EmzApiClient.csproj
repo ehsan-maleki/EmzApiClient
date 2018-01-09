@@ -1,16 +1,39 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-    <AssemblyName>EMZAM.DevTools.EmzApiClient</AssemblyName>
-    <RootNamespace>EMZAM.DevTools.EmzApiClient</RootNamespace>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>bin\Debug\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>bin\Release\</OutputPath>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+
+        <Version>1.0.1</Version>
+        <AssemblyVersion>1.0.1</AssemblyVersion>
+        <AssemblyName>EMZAM.DevTools.EmzApiClient</AssemblyName>
+        <RootNamespace>EMZAM.DevTools.EmzApiClient</RootNamespace>
+
+        <ApplicationVersion>1.0.1</ApplicationVersion>
+        <AssemblyTitle>EMZAM Rest API Client</AssemblyTitle>
+        <Company>www.EhsanMaleki.com</Company>
+
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>1.0.1</PackageVersion>
+        <PackageId>EMZAM.DevTools.EmzApiClient</PackageId>
+        <Description>Easily work with Rest APIs</Description>
+        <Authors>Ehsan Maleki Zoeram</Authors>
+        <PackageLicenseUrl>https://github.com/ehsan-maleki/EmzApiClient/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/ehsan-maleki/EmzApiClient</PackageProjectUrl>
+        <PackageReleaseNotes>Request timeout increased to 5 minutes and can be changed by user</PackageReleaseNotes>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <Copyright>Copyright ©2018 Ehsan Maleki Zoeram</Copyright>
+        <PackageTags>web utility http json url api rest-api rest emzam</PackageTags>
+
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <OutputPath>bin\Debug\</OutputPath>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <OutputPath>bin\Release\</OutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="10.0.3"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Remove="AssemblyInfo.cs"/>
+    </ItemGroup>
 </Project>

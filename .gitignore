@@ -1,5 +1,9 @@
 .idea/
-EmzApiClient.UsageSample/bin/
-EmzApiClient.UsageSample/obj/
+
 EmzApiClient/bin/
 EmzApiClient/obj/
+!EmzApiClient/obj/Debug/netcoreapp2.0/EMZAM.Utilities.EmzApiClient.AssemblyInfo.cs
+
+EmzApiClient.UsageSample/bin/
+EmzApiClient.UsageSample/obj/
+!EmzApiClient.UsageSample/obj/Debug/netcoreapp2.0/EmzApiClient.UsageSample.AssemblyInfo.cs
