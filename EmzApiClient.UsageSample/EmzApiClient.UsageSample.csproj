@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>EMZAM.DevTools.EmzApiClient.UsageSample</AssemblyName>
+    <RootNamespace>EMZAM.DevTools.EmzApiClient.UsageSample</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmzApiClient\EmzApiClient.csproj">
+      <Project>{F1B3D6AD-A6CA-464D-A53E-4F45DA8E98F3}</Project>
+      <Name>EmzApiClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
